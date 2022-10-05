@@ -1,1 +1,9 @@
-<paste log output from Kubernetes-mediated prediction, here>
+root@MrWhiz-VM:/home/mrwhiz/Chapter4/Udacity_Project4_GBD# ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "updacityp4" already exists
+NAME         READY   STATUS    RESTARTS   AGE
+updacityp4   1/1     Running   0          6m49s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
