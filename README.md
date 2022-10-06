@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/gbdextraz/Udacity_Project4_GBD/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/gbdextraz/Udacity_Project4_GBD/tree/main)
 
 ## Project Overview
 
@@ -39,12 +39,15 @@ source .devops/bin/activate
 ### Running `app.py`
 
 1. Standalone:  `python app.py`
+    Execute the python app locally
 2. Run in Docker:  `./run_docker.sh`
+    Build docker image and start the application from docker image
 3. Run in Kubernetes:  `./run_kubernetes.sh`
+    Pull the docker image to kubernetes pod and start the application
 
-### Kubernetes Steps
-
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+### Description about the files 
+app.py            - application file
+run_docker.sh     - create docker image and start application
+upload_docker.sh  - upload docker image to docker repo
+run_kubernetes.sh - download docker image to kubernetes and start application
+make_prediction.sh- make predictions
